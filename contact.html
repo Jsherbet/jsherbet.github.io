@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>A Fisherman's Life|Contact</title>
+	<meta charset="utf-8">
+	<meta name="description" content="A Fisherman's Life, a Clearwater, Florida based fishing company that offers services such as charters, rentals, boats, and classes.">
+	<link rel="stylesheet" href="fishermanstylesheet.css">
+	<link rel="icon" href="images/favicon.png">
+	<style>
+	</style>
+	</head>
+	<body>
+		<div id="top-wrapper">
+			<header>
+			<h1>A Fisherman's Life</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a>
+						<ul id="dynamicList">
+							<li><a href="fishingcharters.html">Fishing Charters</a></li>
+							<li><a href="boatrentals.html">Boat Rentals</a></li>
+							<li><a href="fishinggear.html">Fishing Gear</a></li>
+							<li><a href="fishingclasses.html">Fishing Classes</a></li>
+						</ul>
+					</li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="wrapper">
+			<main>
+			<img id="hero" src="images/contactHero.jpeg" alt="This is the hero image."> <br>
+			<h2>Contact.</h2>
+			<p class="reg-text">555-555-5555<br><br>5555 Imaginary Drive<br>Imaginary Clearwater, US 55555<br><br><br> Or use the form below to contact us directly.<br>Required information is marked with an asterisk (*).</p>
+			<div class="contactDiv">
+				<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<label for="myName">* Name:</label>
+					<input type="text" name="myName" id="myName" required="required">
+					<label for="myEmail">* E-mail:</label>
+					<input type="email" name="myEmail" id="myEmail" required="required">
+					<label for="myComments">* Comments:</label>
+					<textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+					<input id="mySubmit" type="submit" value="Send Now"> 
+				</form>
+			</div>
+			<a href="http://www.facebook.com"><img src="images/facebookIcon.png" class="icon" alt="facebook logo"></a> &nbsp;
+			<a href="http://www.twitter.com"><img src="images/twitterIcon.png" class="icon" alt="twitter logo"></a> &nbsp;
+			<a href="http://www.googleplus.com"><img src="images/googlePlusIcon.png" class="icon" alt="google plus logo"></a>
+			</main>
+			<footer>
+			Copyright &copy; <a href="mailto:fisherman@afishermanslife.com" class="link">A Fisherman's Life</a> || <a href="copyrightinfo.html" class="link">Copyright Information on Photos and Icons</a>
+			</footer>
+		</div>
+	</body>
+</html>

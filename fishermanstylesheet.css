@@ -1,0 +1,633 @@
+@font-face {font-family: lobster;
+	src: url(fonts/lobster.otf);
+
+}
+
+/* Website CSS*/
+#top-wrapper {position:fixed;
+	width:100%;
+}
+#wrapper {width: 85%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #fef8f8;
+	border-right:2px solid;
+	border-left:2px solid;
+	padding-top:7.2em;
+}
+header{height: 5em;
+	background-color:#034f74;
+	color:white;
+	border-top: 2px solid black;
+	padding: 1px;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+	background-image: url(images/header.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-family: lobster, Verdana, Sans-serif;
+	color: #A19375;
+	font-size: 3.5em;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 8px;
+	letter-spacing: 1px;
+}
+
+nav {  background-color: #034f74; 
+	   font-family: verdana, sans-serif;
+	   font-weight: bold;
+	   text-align: center;
+	   padding-right: 2em;
+	   position:relative;
+	   border-top:2px solid;
+	   border-bottom:2px solid;
+		margin-left: -10px;
+		margin-right: -10px;
+} 
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+nav ul ul{position:absolute;
+	left: auto;
+	right: auto;
+	background-color:#034f74;
+	padding:0;
+	text-align:left;
+	display:none;
+	margin-top:0.54em;
+}
+nav ul ul li{border:1px solid black;
+	display:block;
+	width:8em;
+	padding-left:1em;
+	margin-left:0;
+}
+nav li { padding: 0.5em;
+	padding-right:3em;
+	padding-left:3em;
+      display: inline-block;
+}
+nav a { text-decoration: none; 
+       display: block;
+}
+nav a:link { color: #FFFFFF;
+}
+nav a:visited { color: #EAEAEA;
+}
+nav a:hover {  color: #D3DBEB;
+}
+nav li:hover ul{display:block;
+}
+
+h2 {font-family: lobster, verdana, sans-serif;
+	color: #A19375;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	letter-spacing: 2px;
+	margin-bottom: 1px;
+}
+
+.reg-text {padding: 20px;
+		padding-left: 200px;
+		padding-right: 200px;
+		font-family:verdana;
+		padding-bottom: 0px;
+}
+.reg-text ul {width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left
+}
+
+h3 {text-decoration: underline;
+	color: #A19375;
+}
+
+.servicePackageLeft {border: 2px solid black;
+	margin: 5px;
+	width:25%;
+	height: auto;
+	padding:10px;
+	font-family:verdana;
+	float: left;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	background-color: #034f74;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	box-sizing: border-box;
+	box-shadow: 5px 5px grey;
+}
+
+.servicePackageLeftMobile {display: none;
+}
+
+.servicePackageRight {border: 2px solid black;
+	margin: 5px;
+	width:25%;
+	padding:10px;
+	font-family:verdana;
+	float: right;
+	margin-right: 20%;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	background-color: #034f74;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	box-sizing: border-box;
+	box-shadow: 5px 5px grey;
+}
+
+.servicePackageRightMobile {display: none;
+}
+
+.service-left {float:left;
+	width:45%;
+	margin-bottom:2em;
+	margin-top:2em;
+	margin-right: -3em;
+	margin-left: 5em;
+	font-family: verdana;
+}
+.service-left img {width:20em;
+	height:auto;
+	border: 2px solid black;}
+
+#upperLeft {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px grey;
+}
+
+#upperLeft:hover {opacity:0.5;
+}
+
+#lowerLeft {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 5px 5px grey;
+}
+
+#lowerLeft:hover {opacity:0.5;
+}
+
+.service-right {float:right;
+	width:45%;
+	margin-bottom:2em;
+	margin-top:2em;
+	margin-left: -3em;
+	margin-right: 5em;
+	font-family: verdana;
+}
+
+.service-right img {width:20em;
+	height:auto;
+	border: 2px solid black;
+}
+
+#upperRight {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px grey;
+}
+
+#upperRight:hover {opacity:0.5;
+}
+
+#lowerRight {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 5px 5px grey;
+}
+
+#lowerRight:hover {opacity:0.5;
+}
+
+#hero {height:auto;
+	width:97%;
+	height:30em;
+	margin-top: 1em;
+	border: 2px solid black;
+}
+.standaloneButton {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px grey;
+}
+
+.standaloneButton:hover {opacity:0.5;
+}
+
+.insetButton {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.insetButton:hover {opacity:0.5;
+}
+
+.testimonials {background-color: #034f74;
+    border: 2px solid black;
+    color: white;
+    padding: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    width: 90%;
+    height: 4em;
+    box-shadow: 5px 5px grey;
+}
+
+body{text-align: center;
+		background-color: #034f74; /*#0887c4;*/
+}
+footer {background-color:#034f74;
+	color:white;
+	border-bottom: 2px solid black;
+	border-top:2px solid black;
+	clear:both;
+	margin-top: 40px;
+	padding: 8px;
+}
+
+.contactDiv {width: 50em;
+		font-family:verdana;
+		box-sizing: border-box;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10em;
+
+}
+
+caption {margin: 1em;
+	font-weight: bold;
+}
+
+label {float: left;
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	width: 120px;
+	padding-right: 1em;
+}
+input, textarea {display: block;
+	margin-bottom: 2em;
+}
+#mySubmit {margin-left: 12em;
+	margin-bottom: 0px;
+}
+form {padding:3em;
+}
+
+.link:link {color:#0887c4;
+	text-decoration: none;
+}
+
+.link:visited {color:#0887c4;
+}
+
+.link:hover {color:#000000;
+}
+
+.icon {width: 75px;
+	height: auto;
+}
+
+.icon:hover {opacity: 0.5;
+}
+
+
+/* Mobile CSS */
+@media only screen and (max-width: 768px){
+	header {height:3em;
+	}
+	h1, h2 {font-size:2em;
+	}
+
+	h2 {padding-left:0.5em;
+		padding-right:0.5em;
+	}
+
+	p {font-size: 90%;
+	}
+
+	#hero {display: none;
+	}
+
+	nav, nav ul, nav li {padding:0;
+	}
+
+	nav li {display: block;
+	}
+
+	nav a {display: block;
+		padding: 0.5px 0;
+		border-bottom:2px solid black;
+	}
+
+	nav ul ul {margin-left: 9999em;
+	}
+
+	#wrapper {padding-top:8em;
+	}
+
+	.reg-text {padding: 5px;
+	}
+
+	/*Start Service Page Sizing & Positioning*/
+	.service-right {clear: left;
+		display:inline;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.service-right img {width: 10em;
+	}
+
+	#upperRight {width: 12em;
+	}
+
+	#upperRight:hover {opacity:1.0;
+	}
+
+	#lowerRight {width: 12em;
+	}
+
+	#lowerRight:hover {opacity:1.0;
+	}
+
+	.service-left {clear: left;
+		display: inline;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.service-left img {width: 10em;
+	}
+
+	#upperLeft {width: 12em;
+	}
+
+	#upperLeft:hover {opacity:1.0;
+	}
+
+	#lowerLeft {width: 12em;
+	}
+
+	#lowerLeft:hover {opacity:1.0;
+	}
+	/*End Service Page Sizing and Positioning*/
+	.servicePackageRightMobile {display: block;
+		width:10em;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid black;
+		padding:10px;
+		font-family:verdana;
+		background-color: #034f74;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		box-shadow: 5px 5px grey;
+
+	}
+
+	.servicePackageRight {display:none;
+	}
+
+	.servicePackageLeftMobile {display:block;
+		width:10em;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		border: 2px solid black;
+		padding:10px;
+		font-family:verdana;
+		background-color: #034f74;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		box-shadow: 5px 5px grey;
+	}
+
+	.servicePackageLeft {display: none;
+	}
+
+	.standaloneButton:hover {opacity: 1.0;
+	}
+
+	.insetButton {width: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	.insetButton:hover {opacity: 1.0;
+	}
+
+	.testimonials {width: 12em;
+		height: auto;
+		padding: 20px;
+		clear: both;
+	}
+
+	.contactDiv {width: 15em;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0}
+
+	#mySubmit {margin-left: 2em;}
+
+	input, textarea {align-content: center;}
+
+	label {padding-bottom: 5px;
+		text-align: center;}
+
+}
+
+
+
+/* Tablet CSS */
+@media only all and (min-width: 769px) and (max-width: 1024px) {
+	body {margin: 0;
+	}
+
+	#wrapper {width:auto;
+	}
+
+	main {margin-left:0;
+	}
+
+	nav {float: none;
+		width:auto;
+	}
+
+	nav li {display: inline-block;
+		padding:0.5em;
+	}
+
+	nav ul {text-align:center;
+	}
+
+	nav ul ul {margin-left: 9999em;
+	}
+
+	nav a {border-style:none;
+	}
+
+	p {font-size: 90%;
+	}
+
+	#hero {height:auto;
+	}
+
+	footer {padding-bottom:3px;
+	}
+
+	.service-right {clear: left;
+		display:inline;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.service-left {clear: left;
+		display: inline;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#upperRight {width: 20em;
+	}
+
+	#upperRight:hover {opacity:1.0;
+	}
+
+	#lowerRight {width: 20em;
+	}
+
+	#lowerRight:hover {opacity:1.0;
+	}
+
+	#upperLeft {width: 20em;
+	}
+
+	#upperLeft:hover {opacity:1.0;
+	}
+
+	#lowerLeft {width: 20em;
+	}
+
+	#lowerLeft:hover {opacity:1.0;
+	}
+
+	.service-right img {width: 18em;
+	}
+
+	.service-left img {width: 18em;
+	}
+
+	.testimonials {height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.standaloneButton:hover {opacity: 1.0;
+	}
+
+	.insetButton:hover {opacity: 1.0;
+	}
+
+	.icon:hover {opacity: 1.0;
+	}
+	.servicePackageRightMobile {display: block;
+		width:25em;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid black;
+		padding:10px;
+		font-family:verdana;
+		background-color: #034f74;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		box-shadow: 5px 5px grey;
+
+	}
+
+	.servicePackageRight {display:none;
+	}
+
+	.servicePackageLeftMobile {display:block;
+		width:25em;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		border: 2px solid black;
+		padding:10px;
+		font-family:verdana;
+		background-color: #034f74;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		box-shadow: 5px 5px grey;
+	}
+
+	.servicePackageLeft {display: none;
+	}
+}
